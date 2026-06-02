@@ -1,3 +1,7 @@
+body{
+  overflow: hidden;
+}
+
 .container-bg {
   background-image: url(../images/pdp\ junior\ bacgraund\ images.png);
 }
@@ -13,6 +17,18 @@
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.line {
+  width: 0%;
+  height: 3px;
+  background-color: rgb(255, 217, 0);
+  display: inline-block;
+  transition: all 0.4s linear;
+}
+
+.nav-links li:hover .line {
+  width: 100%;
 }
 
 .navbar {
@@ -82,21 +98,23 @@ header {
   border: 2px solid azure;
   border-radius: 30px;
   color: white;
-  background-color: rgb(255, 0, 0);
+  padding: 9px;
+  background: linear-gradient( to bottom , blue, aqua);
   transition: all 0.7s linear;
 }
 
 .nav-links li button:hover {
-  background-color: transparent;
-  border: 2px solid blue;
+  background: linear-gradient(to bottom , green, greenyellow);
+  border: 2px solid rgb(0, 255, 42);
   color: aliceblue;
 }
 
 #portfolio .container {
-  background-color: rgba(24, 20, 20, 0.607);
-  border-radius: 25px;
+  background-color: rgba(214, 207, 207, 0.174);
+  border-radius: 20px;
+  padding: 10px;
+  backdrop-filter: blur(8px);
   padding: 50px;
-  background: blur(2px);
 }
 
 #hero {
@@ -126,34 +144,31 @@ header {
   color: white;
   border-radius: 10px;
   border: 2px solid white;
-  background-color: blue;
+  padding: 8px;
+  background: linear-gradient( to bottom , blue, aqua);
   padding-top: 9px;
-  padding-bottom: 9px;
+  padding-bottom: 10px;
   transition: all 0.5s linear;
 }
 
 .div-text .button1:hover {
   color: white;
-  background-color: transparent;
+  background: linear-gradient( to bottom , rgb(34, 34, 255), aqua);
 }
 
 .button {
-  background-color: orange;
+  background: linear-gradient( to bottom , blue, rgb(39, 255, 255));
   border: 1px solid white;
   color: white;
-  border-radius: 10px;
+  border-radius: 8px;
   padding-top: 8px;
   padding-bottom: 8px;
+  padding: 10px;
   transition: all 0.5s linear;
 }
 
 .button:hover {
-  background-color: transparent;
-  color: aliceblue;
-}
-
-.button:hover {
-  background-color: transparent;
+  background: linear-gradient( to bottom , rgb(9, 9, 220), rgb(6, 220, 220));
   color: aliceblue;
 }
 
@@ -229,6 +244,7 @@ header {
   animation: rotating 25s linear infinite;
   transition: all 0.9s linear;
   cursor: pointer;
+
 }
 
 .inner:hover {
@@ -318,7 +334,7 @@ a {
   display: block;
   text-align: center;
   margin-top: 10px;
-  border: 2px solid rgb(255, 115, 1);
+  border: 2px solid rgb(191, 255, 0);
   border-radius: 40px;
   padding: 10px 20px;
   color: rgb(255, 255, 255);
@@ -326,8 +342,9 @@ a {
 }
 
 .project-card a:hover {
-  background-color: rgb(255, 230, 0);
-  color: #000;
+background:linear-gradient(to bottom , red , rgb(123, 5, 5));
+  color: #ffffff;
+  border: 2px solid rgb(111, 3, 3);
 }
 
 .project-card h1 {
@@ -349,7 +366,7 @@ a {
   color: aliceblue;
   transition: all 0.9s linear;
   overflow: hidden;
-  transform: scaleY(1);
+  transform: scaleY(1);margin-bottom: 30px;
 }
 
 .project-card:hover p {
@@ -372,13 +389,43 @@ a {
   padding: top 60px;
 }
 
+.container .project-title{
+  font-size: 47px;
+  padding-top: 20px;
+}
+
+#project .container{
+      background-color: rgba(214, 207, 207, 0.174);
+  border-radius: 20px;
+height: 830px;
+  backdrop-filter: blur(8px);
+}
+
+#projects .container{
+      background-color: rgba(214, 207, 207, 0.174);
+  border-radius: 20px;
+height: 1050px;
+  backdrop-filter: blur(8px);
+  height: 1000px;
+}
+
 #guruxdoshlarim {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
+#guruxdoshlarim .container{
+    background-color: rgba(214, 207, 207, 0.174);
+  border-radius: 20px;
+  backdrop-filter: blur(8px);
+  padding-bottom: 30px;
+}
+
 .jamoa-title {
   text-align: center;
+  color: white;
+  font-size: 47px;
+  padding-top: 47px;
 }
 
 .jamoa-cards {
@@ -444,11 +491,13 @@ a {
 }
 
 .jamoa-info {
-  background-color: rgba(0, 0, 0, 0.205);
+     background-color: rgba(0, 0, 0, 0.459);
+  border-radius: 20px;
+  backdrop-filter: blur(8px);
   width: 100%;
   height: 100%;
   border-radius: 20px;
-  padding: 10px;
+  padding: 25px;
 }
 
 .jamoa-info {
@@ -478,6 +527,14 @@ a {
   object-fit: 90px;
 }
 
+#project-flip .container{
+    background-color: rgba(214, 207, 207, 0.174);
+  border-radius: 20px;
+height: 1050px;
+  backdrop-filter: blur(8px);
+
+}
+
 .project-title{
   text-align: center;
   margin-bottom: 40px;
@@ -485,14 +542,17 @@ a {
   font-size: 32px;
 }
 
+.project-title h1{
+  font-size: 47px;
+}
 
 .flip-card {
   background-color: transparent;
-  width: 190px;
-  height: 254px;
+  width: 350px;
+  height: 290px;
   perspective: 1000px;
   font-family: sans-serif;
-padding-right: 270px;
+margin-top: 20px;
 }
 
 .title {
@@ -505,7 +565,8 @@ padding-right: 270px;
 .flip-card-inner {
   position: relative;
   width: 300px;
-  height: 420px;
+  align-items: center;
+  height: 350px;
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
@@ -519,6 +580,7 @@ padding-right: 270px;
   box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
   position: absolute;
   display: flex;
+  align-items: center;
   flex-direction: column;
   justify-content: center;
   width: 100%;
@@ -544,13 +606,13 @@ padding-right: 270px;
 .flip-card-back img{
 border-radius: 20px;
 width: 100%;
-height: 420px;
+  height: 350px;
 }
 
 .project-cards{
-  display: flex;
+display: flex;
   align-items: center;
-  gap: 180px;
+  gap: 80px;
   flex-wrap: wrap;
   text-align: center;
   justify-content: center;
@@ -562,4 +624,161 @@ height: 420px;
   font-size: 16px;
   padding: 10px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.load{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  animation: ochir 4s forwards;
+}
+
+@keyframes ochir {
+  0%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 1;
+  }
+90%{
+  opacity: 1;
+}
+  100%{
+   opacity: 0;
+   z-index: -1;
+  }
+}
+
+.liquid-loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding: 20px;
+  font-family: system-ui, sans-serif;
+}
+
+.loader-track {
+  position: relative;
+  width: 180px;
+  height: 32px;
+  background: linear-gradient(135deg, #2a2a2a, #1a1a1a);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow:
+    inset 0 2px 4px rgba(0, 0, 0, 0.6),
+    0 1px 3px rgba(255, 255, 255, 0.1);
+}
+
+.liquid-fill {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: calc(100% - 4px);
+  background: linear-gradient(90deg, #4f46e5, #7c3aed, #ec4899, #f59e0b);
+  border-radius: 14px;
+  animation:
+    fillProgress 4s ease-out infinite,
+    colorShift 3s linear infinite;
+  box-shadow:
+    0 0 12px rgba(124, 58, 237, 0.4),
+    inset 0 1px 2px rgba(255, 255, 255, 0.2);
+}
+
+.loading-text {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  animation: textGlow 1s ease-in-out infinite;
+}
+
+.dot {
+  margin-left: 3px;
+  animation: blink 1.5s infinite;
+}
+.dot:nth-of-type(1) {
+  animation-delay: 0s;
+}
+.dot:nth-of-type(2) {
+  animation-delay: 0.3s;
+}
+.dot:nth-of-type(3) {
+  animation-delay: 0.6s;
+}
+
+@keyframes fillProgress {
+  0% {
+    width: 4px;
+  }
+  25% {
+    width: 25%;
+  }
+  50% {
+    width: 50%;
+  }
+  75% {
+    width: 75%;
+  }
+  100% {
+    width: calc(100% - 4px);
+  }
+}
+
+@keyframes colorShift {
+  0% {
+    filter: hue-rotate(0deg) brightness(1);
+  }
+  33% {
+    filter: hue-rotate(120deg) brightness(1.1);
+  }
+  66% {
+    filter: hue-rotate(240deg) brightness(0.9);
+  }
+  100% {
+    filter: hue-rotate(360deg) brightness(1);
+  }
+}
+
+@keyframes textGlow {
+  0%,
+  100% {
+    opacity: 0.7;
+    text-shadow: 0 0 8px rgba(139, 92, 246, 0.3);
+  }
+  50% {
+    opacity: 1;
+    text-shadow: 0 0 16px rgba(139, 92, 246, 0.6);
+  }
+}
+
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#projectlarim .container{
+      background-color: rgba(214, 207, 207, 0.174);
+  border-radius: 20px;
+  backdrop-filter: blur(8px);
+  padding-bottom: 30px;
+  padding: 30px;
+}
+
+.git{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
