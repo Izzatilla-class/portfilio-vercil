@@ -153,7 +153,7 @@ header {
 
 .div-text .button1:hover {
   color: white;
-  background: linear-gradient( to bottom , rgb(34, 34, 255), aqua);
+  background: linear-gradient( to bottom , rgb(2, 131, 19), rgb(0, 255, 8));
 }
 
 .button {
@@ -168,7 +168,7 @@ header {
 }
 
 .button:hover {
-  background: linear-gradient( to bottom , rgb(9, 9, 220), rgb(6, 220, 220));
+  background: linear-gradient( to bottom , rgb(2, 131, 19), rgb(0, 255, 8));
   color: aliceblue;
 }
 
